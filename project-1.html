@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronomy</title>
+
+    <style>
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/137/419/original/Night-sky-photography.jpg?1722882302");
+        background-size: cover;
+      }
+      .content {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px 60px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        border: 1px dotted white;
+        margin: 20px 80px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      }
+      h2 {
+        color: darkgrey;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        color: aqua;
+        text-align: justify;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      .link {
+        font-size: 18px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: cornflowerblue;
+      }
+      .link:hover {
+        font-weight: bolder;
+      }
+      .telescope:hover {
+        text-decoration: none;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: blueviolet;
+        color: white;
+        font-size: 20px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .footer {
+        text-align: center;
+        font-family: monospace;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>ASTRONOMY</h1>
+
+      <h2>
+        <em> "Semper supra" </em>
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/137/418/original/1000_F_582703325_Se8dBTZI8hLd3SNcdGcLTK9DfIijYpa0.jpg?1722881770"
+        alt="astronaunt"
+      />
+      <hr />
+      <p>
+        <strong>Astronomy</strong> is the branch of science that studies
+        phenomena outside the Earth's atmosphere. The word astronomy comes from
+        Greek and means the law of the sun, stars and moon. Astronomy is one of
+        the oldest sciences.
+      </p>
+      <hr />
+      <br />
+      <a
+        href="https://am.wikipedia.org/wiki/%E1%88%A5%E1%8A%90_%E1%8D%88%E1%88%88%E1%8A%AD"
+        target="_blank"
+      >
+        <span class="telescope"> 🔭 </span>
+        <span class="link"> More about Astronomy </span>
+      </a>
+      <br />
+      <br />
+      <br />
+      <button>Be a member 🧑‍🚀</button>
+      <p class="footer">Made by Meklit Workineh</p>
+    </div>
+
+    <script>
+      function membership() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(`Thank you, ${name} for being a member🤓`);
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", membership);
+    </script>
+  </body>
+</html>
